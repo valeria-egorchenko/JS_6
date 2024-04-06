@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index58</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      /**Есть массив,  нужно  создать отфильтрованный  массив, все элементы которого больше или равны  99,
+       * а все меньшие 99 удалены.*/
+      let arr1 = [50, 100, 75, 80, 90, -7, 120];
+      arr1.sort();
+      let arr = [];
+      for (let i = 0; i < arr1.length; i++) {
+        if (arr1[i] >= 99) {
+          arr.unshift(arr1[i]);
+        }
+      }
+      window.alert(`Массив изначальный: ${"[" + arr1 + "]"}.\nОтфильтрованный  массив, все элементы которого больше или равны 99 получим: ${"[" + arr.reverse() + "]"}.`)
+    </script>
+  </body>
+</html>

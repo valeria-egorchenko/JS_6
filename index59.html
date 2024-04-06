@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index59</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      //Есть массив, напишите функцию, которая будет убирать повторяющиеся значения в массиве с примитивными значениями.
+      //Пример: [5, 7, 8, 5, 7] => [5, 7, 8]
+      let arr1 = [5, 7, 8, 5, 7]
+		window.alert(`Массив изначальный: ${"[" + arr1 + "]"}.`)
+		function repeatDelete() {
+		arr1.sort();  
+      	let arr = [arr1[0]];
+      	for (let i = 1; i < arr1.length; i++) {
+        	if (arr1[i] != arr[arr.length - 1]) {
+          		arr.push(arr1[i]);
+        	}
+      	}
+      	return window.alert(`Функция repeatDelete() убирает повторяющиеся значения в массиве: ${"[" + arr.sort((a, b) => (a - b)) + "]"}.`);
+	}
+	repeatDelete();
+
+    </script>
+  </body>
+</html>

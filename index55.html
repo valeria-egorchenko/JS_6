@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index55</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		/**Есть  массив  [1,  2,  3,  4,  5].  С  помощью  функции  splice  сделайте  из  него  массив  
+		 * [1,  2,  3,  'a',  'b',  'c',  4,  5].*/
+		let arr1 = [1, 2, 3, 4, 5];
+		window.alert(`Массив изначальный: ${"[" + arr1 + "]"}.`)
+		arr1.splice(3, 0, 'a',  'b',  'c'); 
+		window.alert(`С помощью функции splice  преобразуем массив в [1,  2,  3,  'a',  'b',  'c',  4,  5]: ${"[" + arr1 + "]"}.`);
+		</script>
+	</body>
+</html>

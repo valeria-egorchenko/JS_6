@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Пример 1 с массивами</title>
+    </head>
+	<body>
+		<script type="text/javascript">
+			const fill = (arraySize, value) => new Array(arraySize).fill(value); 
+    		const data = prompt('Введите длину массива'); 
+    		const valueToFill = prompt('Введите элементы массива:', 'b');  
+			document.write(`Массив длиной ${"[" + data + "]"}, заполненный элементами ${valueToFill}:<br>${"[" + fill(+data, valueToFill)+ "]"}`);
+    	</script>
+	</body>
+</html>

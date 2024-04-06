@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index54</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		//Есть массив [1, 2, 3, 4, 5]. С помощью функции splice запишите в новый массив элементы [2, 3, 4]. 
+		let arr1 = [1, 2, 3, 4, 5];
+		window.alert(`Массив изначальный: ${"[" + arr1 + "]"}.`)
+		let arr2 = [arr1];
+		arr2.splice(5, 0, 2, 3, 4); // после позиции 5 добавляем новые значения [2, 3, 4]
+		window.alert(arr1);  
+		window.alert(`Массив изначальный: ${"[" + arr1 + "]"}.\nС помощью функции splice запишем в новый массив элементы [2, 3, 4]: ${"[" + arr2 + "]"}.`);
+	</script>
+	</body>
+</html>

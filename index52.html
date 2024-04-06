@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index52</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/**Есть массив с элементами 'a', 'b', 'c', 'b', 'a'. Удалите из него повторяющиеся элементы, 
+			 * используя функцию sort.**/
+			let arr1 = ['a', 'b', 'c', 'b', 'a'];
+		    arr1.sort();  
+            let arr = [arr1[0]];			
+            for (let i = 1; i < arr1.length; i++) {
+				if(arr1[i] != arr[arr.length - 1]){  
+                    arr.push(arr1[i]);  
+                }              
+            }
+            window.alert(`Массив изначальный: ${"[" + arr1 + "]"}.\nУдалим из него повторяющиеся элементы, используя функцию sort: ${"[" + arr + "]"}.`);
+		</script>
+	</body>
+</html>
